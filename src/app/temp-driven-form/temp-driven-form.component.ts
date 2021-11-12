@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-temp-driven-form',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class TempDrivenFormComponent implements OnInit {
 
   constructor() { }
-
+  loginData(signInform: NgForm){
+   console.log(signInform.value.email);
+   console.log(signInform.value.terms)
+  }
   ngOnInit(): void {
   }
 

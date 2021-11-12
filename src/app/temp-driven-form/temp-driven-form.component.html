@@ -1,1 +1,22 @@
-<p>temp-driven-form works!</p>
+
+<h2>Sign-in using Template-driven form</h2>
+<div class='container' class="border border-primary" >
+    <div>
+<form #signinform='ngForm' (ngSubmit)="loginData(signinform)"> 
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" ngModel>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="pass" ngModel>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input"   name='terms' ngModel id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Agree to terms</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
