@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component';
 import { ReactiveFormComponent } from "./reactive-form/reactive-form.component";
+import { ObservabledemoComponent } from './observabledemo/observabledemo.component';
 @NgModule({
   declarations: [
     AppComponent,
     TempDrivenFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    ObservabledemoComponent
   ],
   imports: [
     BrowserModule,
